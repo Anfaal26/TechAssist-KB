@@ -1,0 +1,199 @@
+timestamp,username,action,details
+2025-12-09 04:31:04,user123,LOGIN_FAILED,Failed login attempt
+2025-12-09 04:31:17,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-09 04:33:02,John Doe,LOGOUT,User logged out
+2025-12-09 04:33:11,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-09 04:38:21,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-09 04:49:52,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 02:40:03,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 02:40:15,John Doe,LOGOUT,User logged out
+2025-12-10 02:40:34,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 02:50:08,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 02:57:09,John Doe,LOGOUT,User logged out
+2025-12-10 02:57:23,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 03:11:52,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 03:15:30,Admin User,LOGOUT,User logged out
+2025-12-10 03:23:05,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 03:23:44,John Doe,LOGOUT,User logged out
+2025-12-10 03:23:53,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 03:28:09,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 03:29:14,Admin User,LOGOUT,User logged out
+2025-12-10 03:36:52,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 03:37:23,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 03:42:38,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 03:54:39,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 04:01:23,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 04:06:21,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 04:10:23,Admin User,LOGOUT,User logged out
+2025-12-10 04:10:31,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 04:11:57,John Doe,LOGOUT,User logged out
+2025-12-10 04:12:03,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 04:12:42,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 04:17:39,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 04:26:27,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 04:37:04,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 04:37:38,Admin User,LOGOUT,User logged out
+2025-12-10 04:37:45,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 04:37:52,John Doe,LOGOUT,User logged out
+2025-12-10 04:37:59,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 04:40:39,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 04:41:32,Admin User,LOGOUT,User logged out
+2025-12-10 04:41:39,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 04:42:18,John Doe,LOGOUT,User logged out
+2025-12-10 04:42:26,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 04:44:05,Admin User,LOGOUT,User logged out
+2025-12-10 04:44:12,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 04:47:16,John Doe,LOGOUT,User logged out
+2025-12-10 04:47:25,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 04:52:38,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 04:52:58,User,LOGOUT,User logged out
+2025-12-10 04:53:06,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 04:55:52,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 04:56:06,User,LOGOUT,User logged out
+2025-12-10 04:56:13,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 04:58:58,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 04:59:07,User,LOGOUT,User logged out
+2025-12-10 04:59:15,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 04:59:22,Admin User,LOGOUT,User logged out
+2025-12-10 18:04:37,jin,REGISTRATION,New user registered
+2025-12-10 18:05:02,jin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 18:09:21,jin,LOGOUT,User logged out
+2025-12-10 18:09:31,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 18:26:15,admin,LOGIN_FAILED,Failed login attempt
+2025-12-10 18:26:27,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 19:17:48,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 19:17:57,User,LOGOUT,User logged out
+2025-12-10 19:18:07,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 19:21:50,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 19:25:06,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-10 19:25:27,Admin User,DELETE_USER,Deleted user: user111
+2025-12-10 19:25:32,Admin User,DELETE_USER,Deleted user: jin
+2025-12-10 19:25:53,Admin User,DELETE_DOCUMENT,Deleted document: Blue_Banana_Article
+2025-12-12 15:40:27,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-12 15:45:00,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-12 15:45:05,User,LOGOUT,User logged out
+2025-12-12 15:45:18,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-12 16:07:32,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-12 16:11:19,Admin User,LOGOUT,User logged out
+2025-12-12 16:11:28,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-12 16:18:01,User,LOGOUT,User logged out
+2025-12-12 16:19:27,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-12 16:24:57,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-12 16:25:00,User,LOGOUT,User logged out
+2025-12-12 16:25:22,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-12 16:26:57,User,LOGOUT,User logged out
+2025-12-12 16:27:28,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-12 16:31:44,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-12 16:35:04,user,LOGIN_FAILED,Failed login attempt
+2025-12-12 16:35:06,user,LOGIN_FAILED,Failed login attempt
+2025-12-12 16:35:12,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-12 16:38:34,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-12 16:40:54,User,LOGOUT,User logged out
+2025-12-12 16:43:28,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-12 16:44:24,User,LOGOUT,User logged out
+2025-12-12 16:46:18,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-12 16:46:46,User,LOGOUT,User logged out
+2025-12-12 16:46:56,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-12 16:47:47,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-12 16:47:58,User,LOGOUT,User logged out
+2025-12-12 16:48:57,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-12 16:53:16,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-12 16:53:41,User,LOGOUT,User logged out
+2025-12-13 00:21:51,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-13 00:25:55,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-13 00:31:41,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-13 00:32:29,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-13 00:34:13,User,LOGOUT,User logged out
+2025-12-13 00:34:21,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-13 00:40:23,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-13 00:41:04,User,LOGOUT,User logged out
+2025-12-13 00:41:11,admin,LOGIN_FAILED,Failed login attempt
+2025-12-13 00:41:17,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-13 00:51:13,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-13 00:51:27,User,LOGOUT,User logged out
+2025-12-13 00:51:36,admin,LOGIN_FAILED,Failed login attempt
+2025-12-13 00:51:50,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-13 00:53:58,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-13 01:04:53,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-13 01:06:33,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-13 01:07:01,Admin User,LOGOUT,User logged out
+2025-12-13 01:35:30,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-13 01:36:12,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-13 01:39:16,User,LOGOUT,User logged out
+2025-12-13 01:39:23,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-13 02:37:33,user,LOGIN_FAILED,Failed login attempt
+2025-12-13 02:37:38,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-13 03:05:35,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-13 03:11:26,User,LOGOUT,User logged out
+2025-12-13 09:42:52,mmkk,REGISTRATION,New user registered
+2025-12-13 09:43:02,mmkk,LOGIN_SUCCESS,User logged in successfully
+2025-12-14 19:01:42,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-14 19:03:39,User,LOGOUT,User logged out
+2025-12-14 19:07:28,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-14 19:19:11,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-14 19:25:32,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-14 20:03:14,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-14 20:09:07,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-14 20:13:41,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-14 20:16:08,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-14 20:23:41,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-14 20:51:11,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-14 20:51:43,User,LOGOUT,User logged out
+2025-12-14 20:52:11,user,LOGIN_FAILED,Failed login attempt
+2025-12-14 20:52:15,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-14 21:02:14,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-14 21:16:53,user,LOGIN_FAILED,Failed login attempt
+2025-12-14 21:16:58,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-14 21:17:17,User,LOGOUT,User logged out
+2025-12-14 21:29:15,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-14 21:32:46,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-14 23:05:14,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-14 23:05:39,User,LOGOUT,User logged out
+2025-12-14 23:06:03,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-14 23:06:30,Admin User,DELETE_USER,Deleted user: mmkk
+2025-12-14 23:14:30,Admin User,LOGOUT,User logged out
+2025-12-14 23:16:18,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-14 23:20:11,User,LOGOUT,User logged out
+2025-12-14 23:22:32,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-14 23:31:33,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-14 23:41:09,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-14 23:43:34,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-14 23:54:20,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-15 00:07:00,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-15 00:09:39,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-15 00:12:22,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-15 00:12:47,User,LOGOUT,User logged out
+2025-12-15 00:12:58,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-15 00:13:10,Admin User,LOGOUT,User logged out
+2025-12-15 00:27:55,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-15 00:28:08,User,LOGOUT,User logged out
+2025-12-15 17:15:21,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-15 17:15:36,User,LOGOUT,User logged out
+2025-12-15 17:18:12,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-15 17:18:15,User,LOGOUT,User logged out
+2025-12-16 02:22:43,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-16 02:22:46,User,LOGOUT,User logged out
+2025-12-16 02:31:24,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-16 03:18:48,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-16 03:20:37,User,LOGOUT,User logged out
+2025-12-16 04:08:12,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-16 04:10:40,User,LOGOUT,User logged out
+2025-12-16 04:13:08,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-16 04:13:18,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-16 04:17:08,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-16 04:23:12,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-16 04:23:31,User,LOGOUT,User logged out
+2025-12-16 04:23:41,admin,LOGIN_SUCCESS,User logged in successfully
+2025-12-16 04:24:17,Admin User,LOGOUT,User logged out
+2025-12-16 04:24:48,user1,LOGIN_SUCCESS,User logged in successfully
+2025-12-16 04:25:09,user1,LOGOUT,User logged out
+2025-12-16 04:38:47,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-16 04:46:43,User,LOGOUT,User logged out
+2025-12-17 15:50:31,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-17 15:51:29,User,LOGOUT,User logged out
+2025-12-18 08:50:07,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-18 08:55:39,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-18 09:00:16,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-18 09:01:54,User,LOGOUT,User logged out
+2025-12-18 09:07:13,user,LOGIN_SUCCESS,User logged in successfully
+2025-12-18 09:07:16,User,LOGOUT,User logged out

@@ -1,0 +1,39 @@
+queryId,query,userId,sessionId,timestamp,resultCount
+q_a9891636-a0b9-481a-9d1e-1a7af553d6ff,hi,u1,sess_de48e87b-94a5-4b7b-9eb6-73309fbeb959,1765566354910,0
+q_370175b7-fa47-4350-a5a6-189b02c8c8f5,hi morning,u1,sess_7bbcc52e-f01c-4096-83df-870dfa794a89,1765590264452,0
+q_d16d3758-2672-426f-86c4-db48838b271e,rate my beauty 1-10,u1,sess_7bbcc52e-f01c-4096-83df-870dfa794a89,1765590288485,0
+q_e4a6b44e-5bdc-464f-9c80-ca5e25f7db6f,michelle khiew qing wei,u1,sess_7bbcc52e-f01c-4096-83df-870dfa794a89,1765590321281,0
+q_e01dfdd7-0744-44d8-bf21-2ecb2bfb4d4f,whats differences between gastris and gastritis,u1,sess_7bbcc52e-f01c-4096-83df-870dfa794a89,1765590348705,0
+q_4c480eb5-d2b7-458e-ac70-d240eeed3b0f,whats the difference between gastris and gastritis ,u1,sess_7bbcc52e-f01c-4096-83df-870dfa794a89,1765590389683,0
+q_f7a4b907-0545-4436-8db3-34f38c3705bb,what colour is a banana,u1,sess_ff0d3cfc-8f47-4e01-8cc1-4254d1bac7e5,1765590431960,0
+q_7b81b229-67d2-45e9-9e9d-93260c8a2339,why is a banana blue,u1,sess_ff0d3cfc-8f47-4e01-8cc1-4254d1bac7e5,1765590453212,0
+q_8192da76-8f16-49cb-8d42-3662fdcfb77a,what colour is a banana,u1,sess_1ec1cb06-95af-450d-b462-63f894e1045d,1765710143254,0
+q_f6365c92-ad01-4268-9b71-b94ee79ea74a,what colour is a banana,u1,sess_02498f18-2494-4893-8482-92a3fa801ce2,1765710552780,0
+q_03fa76ea-28dd-4ebe-89b6-d629d9d1df04,hi,u1,sess_e7662623-789e-4072-9821-d0d2694627a6,1765711164678,0
+q_1611d77e-1a41-4aba-81ef-49b8533c96b9,hi,u1,sess_cf99c6c9-df4a-40b7-b62d-588b44129747,1765711216251,0
+q_60ee89b4-b250-48ee-81f9-63d3bc6274d2,what colour is a banana,u1,sess_f548ec51-bd98-4b70-877c-5cf08128a869,1765711251382,0
+q_a2d0e20c-7d10-4791-b250-fdc89c9fcad3,what colour is a banana ,u1,sess_0ff07b5c-acbb-4e77-a21c-ffa2eb1f194e,1765711554633,0
+q_2daa2925-992d-4425-8c4a-472869dc764d,UI develoment ,u1,sess_6caba4e5-a468-4169-a880-1b5ad17aaa08,1765713810880,0
+q_5bf2fdef-cbd8-4729-b539-ebd376114d2a,UI development,u1,sess_f7d85fd6-e7fb-4f42-9cb8-9a61204e7057,1765714168924,0
+q_f38665cb-f64f-4a05-a365-0f179ada9044,UI development,u1,sess_678ddbc6-89e5-4d07-b6eb-fecc9a90678d,1765714438261,0
+q_ed3ffcf8-118d-4ee6-9c1a-2a0a825e7088,UI development,u1,sess_16216ad5-282b-4cc2-8262-1deff20ae595,1765714589387,0
+q_99784625-0f0a-4563-afe7-4c1b399ef76c,wht colour is a banana,u1,sess_e3388666-4fa3-4839-846e-30f2b82c97ea,1765714645118,0
+q_f4447d99-e99d-4fd4-8c76-6f784fd769d4,what colour is a banana,u1,sess_39b0ea78-84db-493c-a12d-784d5afd7cd2,1765715054728,0
+q_ca63b436-1816-45cb-9d9c-c9bddb2bd91e,what is ui implementation,u1,sess_a9ac4a7f-6e81-4ba4-aac8-66fae02e5220,1765725777177,0
+q_4db9c0c3-120f-44e1-98ac-77e366349404,',u1,sess_a9ac4a7f-6e81-4ba4-aac8-66fae02e5220,1765725779546,0
+q_8933da19-d753-4d15-ae46-cf070a98a20d,what comes first the egg or the chicken,u1,sess_a9ac4a7f-6e81-4ba4-aac8-66fae02e5220,1765725815276,0
+q_5c1a7727-35cc-4803-903d-11133a99cb52,i want your personal perspective on this ,u1,sess_a9ac4a7f-6e81-4ba4-aac8-66fae02e5220,1765725843353,0
+q_9a4d47ee-d257-4165-91ad-9958d5a5b564,how do i sell a banana,u1,sess_ef40aa6b-445a-4eb3-bd05-4a7a6e3d502e,1765725934736,0
+q_9457a79e-456f-4aae-a032-61d4012175a1,what is the most important aspect in starting up an business,u1,sess_ef40aa6b-445a-4eb3-bd05-4a7a6e3d502e,1765725978139,0
+q_e21b1aee-ce1b-4814-8b2f-ca7d2d60d525,what colour is a banana,u1,sess_ef40aa6b-445a-4eb3-bd05-4a7a6e3d502e,1765726006135,0
+q_5a204003-87f4-46a5-b5ef-22c4062aba52,what do i need to do to start a business,u1,sess_85f3bf71-0bae-4d7e-a6d4-579264049900,1765727094263,0
+q_76b713a3-da31-4a3d-9217-7e88cefb9c75,what is chua chong eu student id,u1,sess_41efa550-ee40-4d95-87fe-55e279bdee6e,1765727822967,0
+q_f07c7fdf-3b17-4091-a702-a77bc5601584,from the pdf doc ,u1,sess_41efa550-ee40-4d95-87fe-55e279bdee6e,1765727845885,0
+q_f867ffaa-b022-4a32-aa64-8cb8ca217b20,how to start a business,u1,sess_5d13ece0-64ed-4e35-88eb-6d5d790c1516,1765727894179,0
+q_cd9f7e03-6277-407b-a2c0-a6d0191d2d4a,hi,u1,sess_59746cad-7994-4348-839c-30badf20f927,1766019126408,0
+q_fa658307-b19c-4ebb-9de4-1f1d394a6508,hi,u1,sess_398c9765-1b9d-4167-9069-338ab3149f52,1766019147576,0
+q_2de519e0-1319-4349-a146-814101316b0b,hi,u1,sess_398c9765-1b9d-4167-9069-338ab3149f52,1766019152030,0
+q_61cae368-01d6-48e2-be39-2a54040f997f,hi,u1,sess_398c9765-1b9d-4167-9069-338ab3149f52,1766019159414,0
+q_fa171201-3b06-4b27-a843-7b856c310f35,hi,u1,sess_14705e04-62e2-4bdc-b9bf-2e58b63aa454,1766019347366,0
+q_970d39d7-75b9-4ed9-bde3-4506008271e6,how is smoking gonna affect me ,u1,sess_14705e04-62e2-4bdc-b9bf-2e58b63aa454,1766019378013,0
+q_c2328a51-b8bb-4b0c-88bd-08902fada3b7,what iis the problem with teens ,u1,sess_a1721df3-5629-4514-883c-bf8adf37ed2e,1766019634964,0

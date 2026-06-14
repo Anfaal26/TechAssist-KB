@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.HBox?>
+
+<StackPane fx:id="rootPane" styleClass="login-root" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.techchat.controller.LoginViewController">
+   <children>
+      <!-- Animated tech background with moving patterns -->
+      <StackPane fx:id="backgroundPane" style="-fx-background-color: #0d1117;">
+         <children>
+            
+            <!-- Möbius Wave Effect - 3 DENSE flowing waves -->
+            <Group fx:id="mobiusWave1" translateY="0">
+               <!-- Wave 1: Blue wave (90 dots, 30% larger) -->
+               <Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/>
+               <Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/>
+               <Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/>
+               <Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/>
+               <Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/>
+               <Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/>
+               <Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/>
+               <Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/>
+               <Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/>
+               <Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/>
+               <Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/>
+               <Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/>
+               <Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/>
+               <Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/>
+               <Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/>
+               <Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/>
+               <Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/>
+               <Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/><Circle radius="1.95" opacity="0.6" fill="#58a6ff"/>
+            </Group>
+            
+            <Group fx:id="mobiusWave2" translateY="0">
+               <!-- Wave 2: Lighter blue wave (150 dots) -->
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+               <Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/><Circle radius="1.5" opacity="0.5" fill="#1f6feb"/>
+            </Group>
+            
+            <Group fx:id="mobiusWave3" translateY="0">
+               <!-- Wave 3: Cyan accent wave (90 dots, 30% larger) -->
+               <Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/>
+               <Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/>
+               <Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/>
+               <Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/>
+               <Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/>
+               <Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/>
+               <Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/>
+               <Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/>
+               <Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/>
+               <Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/>
+               <Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/>
+               <Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/>
+               <Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/>
+               <Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/>
+               <Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/>
+               <Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/>
+               <Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/>
+               <Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/><Circle radius="1.95" opacity="0.4" fill="#79c0ff"/>
+            </Group>
+            
+            <!-- INTERMEDIATE CONNECTING DOTS - Fill gaps between main waves for smooth flow -->
+            <Group fx:id="intermediateWave1" translateY="0">
+               <!-- Intermediate Wave 1: Tiny dots between wave 1 and 2 (100 dots for smooth connection) -->
+               <Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/>
+               <Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/>
+               <Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/>
+               <Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/>
+               <Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/>
+               <Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/>
+               <Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/>
+               <Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/>
+               <Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/>
+               <Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/>
+               <Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/>
+               <Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/>
+               <Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/>
+               <Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/>
+               <Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/>
+               <Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/>
+               <Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/>
+               <Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/>
+               <Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/>
+               <Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/><Circle radius="1.0" opacity="0.45" fill="#4a9bd8"/>
+            </Group>
+            
+            <Group fx:id="intermediateWave2" translateY="0">
+               <!-- Intermediate Wave 2: Tiny dots between wave 2 and 3 (100 dots) -->
+               <Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/>
+               <Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/>
+               <Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/>
+               <Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/>
+               <Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/>
+               <Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/>
+               <Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/>
+               <Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/>
+               <Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/>
+               <Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/>
+               <Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/>
+               <Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/>
+               <Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/>
+               <Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/>
+               <Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/>
+               <Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/>
+               <Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/>
+               <Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/>
+               <Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/>
+               <Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/><Circle radius="1.2" opacity="0.42" fill="#3d8fc7"/>
+            </Group>
+            
+            <Group fx:id="intermediateWave3" translateY="0">
+               <!-- Intermediate Wave 3: Extra tiny dots for ultimate smoothness (100 dots) -->
+               <Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/>
+               <Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/>
+               <Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/>
+               <Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/>
+               <Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/>
+               <Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/>
+               <Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/>
+               <Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/>
+               <Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/>
+               <Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/>
+               <Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/>
+               <Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/>
+               <Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/>
+               <Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/>
+               <Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/>
+               <Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/>
+               <Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/>
+               <Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/>
+               <Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/>
+               <Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/><Circle radius="1.1" opacity="0.38" fill="#5099d5"/>
+            </Group>
+            
+            <!-- CONNECTING WAVES - Smaller dots to fill gaps and create smooth flow -->
+            <Group fx:id="connectWave1" translateY="0">
+               <!-- Connect Wave 1: Small dots between wave 1 and 2 (80 dots) -->
+               <Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/>
+               <Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/>
+               <Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/>
+               <Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/>
+               <Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/>
+               <Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/>
+               <Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/>
+               <Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/>
+               <Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/>
+               <Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/>
+               <Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/>
+               <Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/>
+               <Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/>
+               <Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/>
+               <Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/>
+               <Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/><Circle radius="0.8" opacity="0.35" fill="#4a8bd6"/>
+            </Group>
+            
+            <Group fx:id="connectWave2" translateY="0">
+               <!-- Connect Wave 2: Small dots between wave 2 and 3 (80 dots) -->
+               <Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/>
+               <Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/>
+               <Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/>
+               <Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/>
+               <Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/>
+               <Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/>
+               <Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/>
+               <Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/>
+               <Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/>
+               <Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/>
+               <Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/>
+               <Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/>
+               <Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/>
+               <Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/>
+               <Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/>
+               <Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/><Circle radius="1.0" opacity="0.3" fill="#5a9de8"/>
+            </Group>
+            
+            <Group fx:id="connectWave3" translateY="0">
+               <!-- Connect Wave 3: Tiny dots for extra smoothness (60 dots) -->
+               <Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/>
+               <Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/>
+               <Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/>
+               <Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/>
+               <Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/>
+               <Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/>
+               <Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/>
+               <Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/>
+               <Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/>
+               <Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/>
+               <Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/>
+               <Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/><Circle radius="0.7" opacity="0.25" fill="#6aa8e8"/>
+            </Group>
+            
+            <!-- ULTRA-FINE CONNECTING DOTS - Complete the Möbius wave with tiny filling dots -->
+            <Group fx:id="ultraFineWave1" translateY="0">
+               <!-- Ultra-fine Wave 1: Tiny dots for ultimate smoothness (60 dots) -->
+               <Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/>
+               <Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/>
+               <Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/>
+               <Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/>
+               <Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/>
+               <Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/>
+               <Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/>
+               <Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/>
+               <Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/>
+               <Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/>
+               <Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/>
+               <Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/><Circle radius="0.6" opacity="0.28" fill="#5fa9e0"/>
+            </Group>
+            
+            <Group fx:id="ultraFineWave2" translateY="0">
+               <!-- Ultra-fine Wave 2: Micro dots between all layers (60 dots) -->
+               <Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/>
+               <Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/>
+               <Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/>
+               <Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/>
+               <Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/>
+               <Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/>
+               <Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/>
+               <Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/>
+               <Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/>
+               <Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/>
+               <Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/>
+               <Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/><Circle radius="0.5" opacity="0.25" fill="#6bb2e6"/>
+            </Group>
+            
+            <Group fx:id="ultraFineWave3" translateY="0">
+               <!-- Ultra-fine Wave 3: Final filling layer (60 dots) -->
+               <Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/>
+               <Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/>
+               <Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/>
+               <Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/>
+               <Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/>
+               <Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/>
+               <Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/>
+               <Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/>
+               <Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/>
+               <Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/>
+               <Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/>
+               <Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/><Circle radius="0.55" opacity="0.22" fill="#78b5e8"/>
+            </Group>
+             
+          </children>
+       </StackPane>
+
+       <!-- Main content container -->
+      <VBox fx:id="loginCard" alignment="CENTER" spacing="15.0" maxWidth="380.0" maxHeight="460.0" 
+            style="-fx-background-color: #1c2128 !important; -fx-background-radius: 20; -fx-effect: dropshadow(gaussian, rgba(88, 166, 255, 0.25), 30, 0.6, 0, 0); -fx-padding: 35; -fx-border-color: rgba(88, 166, 255, 0.4); -fx-border-width: 1px; -fx-border-radius: 20;">
+         <children>
+            <!-- Logo/Title Section -->
+            <VBox alignment="CENTER" spacing="8.0" style="-fx-background-color: transparent;">
+               <children>
+
+                  <Label fx:id="titleLabel" text="TechAssist" 
+                         style="-fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: #e6edf3; -fx-background-color: transparent;">
+                     <VBox.margin>
+                        <Insets bottom="3.0" />
+                     </VBox.margin>
+                  </Label>
+                  
+                  <Label text="Welcome back! Please login to your account" 
+                         style="-fx-font-size: 12px; -fx-text-fill: #7d8590; -fx-background-color: transparent;">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            
+            <!-- Input Fields -->
+            <VBox spacing="12.0" alignment="CENTER" style="-fx-background-color: transparent;">
+               <children>
+                  <VBox spacing="6.0" style="-fx-background-color: transparent;">
+                     <children>
+                        <Label text="Username" style="-fx-font-size: 12px; -fx-font-weight: bold; -fx-text-fill: #e6edf3; -fx-background-color: transparent;" />
+                        <TextField fx:id="usernameField" promptText="Enter your username"
+                                   style="-fx-background-color: #0d1117; -fx-text-fill: #e6edf3; -fx-prompt-text-fill: #7d8590; -fx-background-radius: 10; -fx-border-color: #30363d; -fx-border-width: 1px; -fx-border-radius: 10; -fx-padding: 10; -fx-font-size: 13px; -fx-pref-width: 280;"
+                                   onMouseEntered="#handleFieldHover" onMouseExited="#handleFieldExit"/>
+                     </children>
+                  </VBox>
+                  
+                  <VBox spacing="6.0" style="-fx-background-color: transparent;">
+                     <children>
+                        <Label text="Password" style="-fx-font-size: 12px; -fx-font-weight: bold; -fx-text-fill: #e6edf3; -fx-background-color: transparent;" />
+                        <PasswordField fx:id="passwordField" promptText="Enter your password"
+                                       style="-fx-background-color: #0d1117; -fx-text-fill: #e6edf3; -fx-prompt-text-fill: #7d8590; -fx-background-radius: 10; -fx-border-color: #30363d; -fx-border-width: 1px; -fx-border-radius: 10; -fx-padding: 10; -fx-font-size: 13px; -fx-pref-width: 280;"
+                                       onMouseEntered="#handleFieldHover" onMouseExited="#handleFieldExit"/>
+                     </children>
+                  </VBox>
+                  
+                  <Label fx:id="errorLabel" text="" style="-fx-text-fill: #e74c3c; -fx-font-size: 11px; -fx-font-weight: bold; -fx-background-color: transparent;">
+                     <VBox.margin>
+                        <Insets top="3.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            
+            <!-- Buttons -->
+            <VBox spacing="10.0" alignment="CENTER" style="-fx-background-color: transparent;">
+               <children>
+                  <Button fx:id="loginButton" text="Login" onAction="#handleLogin" prefWidth="280.0" prefHeight="40.0"
+                          style="-fx-background-color: #238636; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10; -fx-cursor: hand; -fx-border-color: rgba(240, 246, 252, 0.1); -fx-border-width: 1px;"
+                          onMouseEntered="#handleButtonHover" onMouseExited="#handleButtonExit">
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin>
+                  </Button>
+                  
+                  <Button text="Create New Account" onAction="#handleRegister" prefWidth="280.0" prefHeight="40.0"
+                          style="-fx-background-color: #161b22; -fx-text-fill: #e6edf3; -fx-border-color: #30363d; -fx-border-width: 1px; -fx-border-radius: 10; -fx-background-radius: 10; -fx-font-size: 13px; -fx-font-weight: bold; -fx-cursor: hand;"
+                          onMouseEntered="#handleButtonHover" onMouseExited="#handleButtonExit"/>
+               </children>
+            </VBox>
+            
+
+         </children>
+      </VBox>
+   </children>
+</StackPane>

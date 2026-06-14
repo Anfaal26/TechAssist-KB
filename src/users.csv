@@ -1,0 +1,4 @@
+userId,username,password,name,email,role
+U001,user,user123,User,user@techchat.com,EndUser
+A001,admin,admin123,Admin User,admin@techchat.com,KBAdmin
+U002,user1,user123,user1,,user

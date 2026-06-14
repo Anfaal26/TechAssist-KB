@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<StackPane fx:id="rootPane" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.techchat.controller.RegisterViewController">
+   <children>
+      <!-- Tech-savvy background with grid and glowing accents -->
+      <StackPane style="-fx-background-color: #0d1117;">
+         <children>
+            <!-- Moving tech circles with different speeds -->
+            <Circle fx:id="circle1" radius="150" opacity="0.08" translateX="-250" translateY="-180" style="-fx-fill: #58a6ff;"/>
+            <Circle fx:id="circle2" radius="100" opacity="0.06" translateX="220" translateY="150" style="-fx-fill: #1f6feb;"/>
+            <Circle fx:id="circle3" radius="130" opacity="0.07" translateX="-180" translateY="140" style="-fx-fill: #58a6ff;"/>
+            <Circle fx:id="circle4" radius="90" opacity="0.05" translateX="280" translateY="-120" style="-fx-fill: #1f6feb;"/>
+            
+            <!-- Tech hexagons for geometric pattern -->
+            <Circle fx:id="hex1" radius="40" opacity="0.04" translateX="-300" translateY="0" style="-fx-fill: #58a6ff;"/>
+            <Circle fx:id="hex2" radius="30" opacity="0.03" translateX="300" translateY="-200" style="-fx-fill: #1f6feb;"/>
+            <Circle fx:id="hex3" radius="35" opacity="0.04" translateX="250" translateY="200" style="-fx-fill: #58a6ff;"/>
+            
+            <!-- 8 GROUPS of 8 vertical dotted lines each - randomly positioned and moving -->
+            
+            <!-- Line Group 1 (Far left) -->
+            <Group fx:id="lineGroup1" translateX="-380" translateY="0">
+               <Line startX="0" startY="-300" endX="0" endY="300" stroke="#58a6ff" strokeWidth="0.8" opacity="0.12" strokeDashArray="6, 20" strokeLineCap="ROUND"/>
+               <Line startX="15" startY="-280" endX="15" endY="320" stroke="#1f6feb" strokeWidth="1.0" opacity="0.15" strokeDashArray="8, 18" strokeLineCap="ROUND"/>
+               <Line startX="30" startY="-290" endX="30" endY="310" stroke="#58a6ff" strokeWidth="1.2" opacity="0.18" strokeDashArray="10, 16" strokeLineCap="ROUND"/>
+               <Line startX="45" startY="-270" endX="45" endY="330" stroke="#1f6feb" strokeWidth="0.9" opacity="0.14" strokeDashArray="7, 19" strokeLineCap="ROUND"/>
+               <Line startX="60" startY="-310" endX="60" endY="300" stroke="#58a6ff" strokeWidth="1.1" opacity="0.16" strokeDashArray="9, 17" strokeLineCap="ROUND"/>
+               <Line startX="75" startY="-285" endX="75" endY="315" stroke="#1f6feb" strokeWidth="1.3" opacity="0.19" strokeDashArray="11, 15" strokeLineCap="ROUND"/>
+               <Line startX="90" startY="-295" endX="90" endY="305" stroke="#58a6ff" strokeWidth="0.8" opacity="0.13" strokeDashArray="6, 20" strokeLineCap="ROUND"/>
+               <Line startX="105" startY="-275" endX="105" endY="325" stroke="#1f6feb" strokeWidth="1.0" opacity="0.15" strokeDashArray="8, 18" strokeLineCap="ROUND"/>
+            </Group>
+            
+            <!-- Line Group 2 (Left-center) -->
+            <Group fx:id="lineGroup2" translateX="-220" translateY="0">
+               <Line startX="0" startY="-310" endX="0" endY="310" stroke="#1f6feb" strokeWidth="1.5" opacity="0.22" strokeDashArray="10, 16" strokeLineCap="ROUND"/>
+               <Line startX="18" startY="-290" endX="18" endY="330" stroke="#58a6ff" strokeWidth="1.8" opacity="0.25" strokeDashArray="12, 14" strokeLineCap="ROUND"/>
+               <Line startX="36" startY="-300" endX="36" endY="320" stroke="#1f6feb" strokeWidth="2.0" opacity="0.28" strokeDashArray="14, 16" strokeLineCap="ROUND"/>
+               <Line startX="54" startY="-285" endX="54" endY="335" stroke="#58a6ff" strokeWidth="1.6" opacity="0.23" strokeDashArray="11, 15" strokeLineCap="ROUND"/>
+               <Line startX="72" startY="-295" endX="72" endY="325" stroke="#1f6feb" strokeWidth="1.7" opacity="0.24" strokeDashArray="12, 16" strokeLineCap="ROUND"/>
+               <Line startX="90" startY="-305" endX="90" endY="315" stroke="#58a6ff" strokeWidth="1.9" opacity="0.26" strokeDashArray="13, 15" strokeLineCap="ROUND"/>
+               <Line startX="108" startY="-280" endX="108" endY="340" stroke="#1f6feb" strokeWidth="1.5" opacity="0.22" strokeDashArray="10, 17" strokeLineCap="ROUND"/>
+               <Line startX="126" startY="-290" endX="126" endY="330" stroke="#58a6ff" strokeWidth="1.8" opacity="0.25" strokeDashArray="12, 16" strokeLineCap="ROUND"/>
+            </Group>
+            
+            <!-- Line Group 3 (Near left center - BOLD) -->
+            <Group fx:id="lineGroup3" translateX="-60" translateY="0">
+               <Line startX="0" startY="-320" endX="0" endY="350" stroke="#58a6ff" strokeWidth="2.5" opacity="0.35" strokeDashArray="14, 16" strokeLineCap="ROUND"/>
+               <Line startX="20" startY="-300" endX="20" endY="370" stroke="#1f6feb" strokeWidth="3.0" opacity="0.38" strokeDashArray="16, 14" strokeLineCap="ROUND"/>
+               <Line startX="40" startY="-310" endX="40" endY="360" stroke="#58a6ff" strokeWidth="2.8" opacity="0.36" strokeDashArray="15, 15" strokeLineCap="ROUND"/>
+               <Line startX="60" startY="-295" endX="60" endY="375" stroke="#1f6feb" strokeWidth="3.2" opacity="0.39" strokeDashArray="17, 13" strokeLineCap="ROUND"/>
+               <Line startX="80" startY="-305" endX="80" endY="365" stroke="#58a6ff" strokeWidth="2.6" opacity="0.34" strokeDashArray="14, 16" strokeLineCap="ROUND"/>
+               <Line startX="100" startY="-315" endX="100" endY="355" stroke="#1f6feb" strokeWidth="2.9" opacity="0.37" strokeDashArray="16, 14" strokeLineCap="ROUND"/>
+               <Line startX="120" startY="-290" endX="120" endY="380" stroke="#58a6ff" strokeWidth="3.1" opacity="0.38" strokeDashArray="16, 14" strokeLineCap="ROUND"/>
+               <Line startX="140" startY="-300" endX="140" endY="370" stroke="#1f6feb" strokeWidth="2.7" opacity="0.35" strokeDashArray="15, 15" strokeLineCap="ROUND"/>
+            </Group>
+            
+            <!-- Line Group 4 (Center - BOLDEST) -->
+            <Group fx:id="lineGroup4" translateX="80" translateY="0">
+               <Line startX="0" startY="-330" endX="0" endY="360" stroke="#1f6feb" strokeWidth="3.5" opacity="0.40" strokeDashArray="18, 14" strokeLineCap="ROUND"/>
+               <Line startX="22" startY="-310" endX="22" endY="380" stroke="#58a6ff" strokeWidth="4.0" opacity="0.42" strokeDashArray="20, 12" strokeLineCap="ROUND"/>
+               <Line startX="44" startY="-320" endX="44" endY="370" stroke="#1f6feb" strokeWidth="3.8" opacity="0.41" strokeDashArray="19, 13" strokeLineCap="ROUND"/>
+               <Line startX="66" startY="-305" endX="66" endY="385" stroke="#58a6ff" strokeWidth="4.2" opacity="0.43" strokeDashArray="21, 11" strokeLineCap="ROUND"/>
+               <Line startX="88" startY="-315" endX="88" endY="375" stroke="#1f6feb" strokeWidth="3.6" opacity="0.40" strokeDashArray="18, 14" strokeLineCap="ROUND"/>
+               <Line startX="110" startY="-325" endX="110" endY="365" stroke="#58a6ff" strokeWidth="3.9" opacity="0.41" strokeDashArray="19, 13" strokeLineCap="ROUND"/>
+               <Line startX="132" startY="-300" endX="132" endY="390" stroke="#1f6feb" strokeWidth="4.1" opacity="0.42" strokeDashArray="20, 12" strokeLineCap="ROUND"/>
+               <Line startX="154" startY="-310" endX="154" endY="380" stroke="#58a6ff" strokeWidth="3.7" opacity="0.40" strokeDashArray="18, 14" strokeLineCap="ROUND"/>
+            </Group>
+            
+            <!-- Line Group 5 (Right-center - BOLD) -->
+            <Group fx:id="lineGroup5" translateX="260" translateY="0">
+               <Line startX="0" startY="-315" endX="0" endY="355" stroke="#58a6ff" strokeWidth="2.8" opacity="0.36" strokeDashArray="15, 15" strokeLineCap="ROUND"/>
+               <Line startX="19" startY="-295" endX="19" endY="375" stroke="#1f6feb" strokeWidth="3.2" opacity="0.39" strokeDashArray="17, 13" strokeLineCap="ROUND"/>
+               <Line startX="38" startY="-305" endX="38" endY="365" stroke="#58a6ff" strokeWidth="3.0" opacity="0.37" strokeDashArray="16, 14" strokeLineCap="ROUND"/>
+               <Line startX="57" startY="-290" endX="57" endY="380" stroke="#1f6feb" strokeWidth="2.7" opacity="0.35" strokeDashArray="15, 15" strokeLineCap="ROUND"/>
+               <Line startX="76" startY="-310" endX="76" endY="360" stroke="#58a6ff" strokeWidth="2.9" opacity="0.36" strokeDashArray="16, 14" strokeLineCap="ROUND"/>
+               <Line startX="95" startY="-300" endX="95" endY="370" stroke="#1f6feb" strokeWidth="3.1" opacity="0.38" strokeDashArray="16, 14" strokeLineCap="ROUND"/>
+               <Line startX="114" startY="-320" endX="114" endY="350" stroke="#58a6ff" strokeWidth="2.6" opacity="0.34" strokeDashArray="14, 16" strokeLineCap="ROUND"/>
+               <Line startX="133" startY="-285" endX="133" endY="385" stroke="#1f6feb" strokeWidth="3.0" opacity="0.37" strokeDashArray="16, 14" strokeLineCap="ROUND"/>
+            </Group>
+            
+            <!-- Line Group 6 (Right) -->
+            <Group fx:id="lineGroup6" translateX="400" translateY="0">
+               <Line startX="0" startY="-300" endX="0" endY="320" stroke="#1f6feb" strokeWidth="1.6" opacity="0.23" strokeDashArray="11, 17" strokeLineCap="ROUND"/>
+               <Line startX="17" startY="-285" endX="17"endY="335" stroke="#58a6ff" strokeWidth="1.9" opacity="0.26" strokeDashArray="13, 15" strokeLineCap="ROUND"/>
+               <Line startX="34" startY="-295" endX="34" endY="325" stroke="#1f6feb" strokeWidth="1.7" opacity="0.24" strokeDashArray="12, 16" strokeLineCap="ROUND"/>
+               <Line startX="51" startY="-280" endX="51" endY="340" stroke="#58a6ff" strokeWidth="1.5" opacity="0.22" strokeDashArray="10, 18" strokeLineCap="ROUND"/>
+               <Line startX="68" startY="-290" endX="68" endY="330" stroke="#1f6feb" strokeWidth="1.8" opacity="0.25" strokeDashArray="12, 16" strokeLineCap="ROUND"/>
+               <Line startX="85" startY="-305" endX="85" endY="315" stroke="#58a6ff" strokeWidth="1.6" opacity="0.23" strokeDashArray="11, 17" strokeLineCap="ROUND"/>
+               <Line startX="102" startY="-275" endX="102" endY="345" stroke="#1f6feb" strokeWidth="1.9" opacity="0.26" strokeDashArray="13, 15" strokeLineCap="ROUND"/>
+               <Line startX="119" startY="-295" endX="119" endY="325" stroke="#58a6ff" strokeWidth="1.7" opacity="0.24" strokeDashArray="12, 16" strokeLineCap="ROUND"/>
+            </Group>
+            
+            <!-- Line Group 7 (Far left edge) -->
+            <Group fx:id="lineGroup7" translateX="-470" translateY="0">
+               <Line startX="0" startY="-250" endX="0" endY="270" stroke="#58a6ff" strokeWidth="0.7" opacity="0.10" strokeDashArray="5, 22" strokeLineCap="ROUND"/>
+               <Line startX="12" startY="-235" endX="12" endY="285" stroke="#1f6feb" strokeWidth="0.8" opacity="0.11" strokeDashArray="6, 20" strokeLineCap="ROUND"/>
+               <Line startX="24" startY="-245" endX="24" endY="275" stroke="#58a6ff" strokeWidth="0.7" opacity="0.10" strokeDashArray="5, 22" strokeLineCap="ROUND"/>
+               <Line startX="36" startY="-230" endX="36" endY="290" stroke="#1f6feb" strokeWidth="0.9" opacity="0.12" strokeDashArray="6, 21" strokeLineCap="ROUND"/>
+               <Line startX="48" startY="-240" endX="48" endY="280" stroke="#58a6ff" strokeWidth="0.7" opacity="0.10" strokeDashArray="5, 22" strokeLineCap="ROUND"/>
+               <Line startX="60" startY="-255" endX="60" endY="265" stroke="#1f6feb" strokeWidth="0.8" opacity="0.11" strokeDashArray="6, 20" strokeLineCap="ROUND"/>
+               <Line startX="72" startY="-225" endX="72" endY="295" stroke="#58a6ff" strokeWidth="0.9" opacity="0.12" strokeDashArray="6, 21" strokeLineCap="ROUND"/>
+               <Line startX="84" startY="-245" endX="84" endY="275" stroke="#1f6feb" strokeWidth="0.7" opacity="0.10" strokeDashArray="5, 22" strokeLineCap="ROUND"/>
+            </Group>
+            
+            <!-- Line Group 8 (Far right edge) -->
+            <Group fx:id="lineGroup8" translateX="480" translateY="0">
+               <Line startX="0" startY="-240" endX="0" endY="280" stroke="#1f6feb" strokeWidth="0.7" opacity="0.11" strokeDashArray="6, 21" strokeLineCap="ROUND"/>
+               <Line startX="13" startY="-225" endX="13" endY="295" stroke="#58a6ff" strokeWidth="0.8" opacity="0.12" strokeDashArray="6, 20" strokeLineCap="ROUND"/>
+               <Line startX="26" startY="-235" endX="26" endY="285" stroke="#1f6feb" strokeWidth="0.7" opacity="0.10" strokeDashArray="5, 22" strokeLineCap="ROUND"/>
+               <Line startX="39" startY="-250" endX="39" endY="270" stroke="#58a6ff" strokeWidth="0.9" opacity="0.12" strokeDashArray="6, 21" strokeLineCap="ROUND"/>
+               <Line startX="52" startY="-230" endX="52" endY="290" stroke="#1f6feb" strokeWidth="0.7" opacity="0.10" strokeDashArray="5, 22" strokeLineCap="ROUND"/>
+               <Line startX="65" startY="-245" endX="65" endY="275" stroke="#58a6ff" strokeWidth="0.8" opacity="0.11" strokeDashArray="6, 20" strokeLineCap="ROUND"/>
+               <Line startX="78" startY="-220" endX="78" endY="300" stroke="#1f6feb" strokeWidth="0.9" opacity="0.12" strokeDashArray="6, 21" strokeLineCap="ROUND"/>
+               <Line startX="91" startY="-240" endX="91" endY="280" stroke="#58a6ff" strokeWidth="0.7" opacity="0.10" strokeDashArray="5, 22" strokeLineCap="ROUND"/>
+            </Group>
+            
+            
+            <!-- Flowing vertical data lines with DISTANCE CONTRAST - Bundle 1 (Far background) -->
+            <Line fx:id="dataLine1" startX="-380" startY="-200" endX="-380" endY="250" stroke="#58a6ff" strokeWidth="0.8" opacity="0.12" strokeDashArray="6, 18" strokeLineCap="ROUND"/>
+            <Line fx:id="dataLine2" startX="-340" startY="-220" endX="-340" endY="200" stroke="#1f6feb" strokeWidth="0.9" opacity="0.13" strokeDashArray="7, 16" strokeLineCap="ROUND"/>
+            <Line fx:id="dataLine3" startX="-300" startY="-180" endX="-300" endY="280" stroke="#58a6ff" strokeWidth="0.8" opacity="0.11" strokeDashArray="6, 20" strokeLineCap="ROUND"/>
+            
+            <!-- Bundle 2 (Mid distance) -->
+            <Line fx:id="dataLine4" startX="-160" startY="-250" endX="-160" endY="300" stroke="#1f6feb" strokeWidth="1.2" opacity="0.18" strokeDashArray="10, 18" strokeLineCap="ROUND"/>
+            <Line fx:id="dataLine5" startX="-100" startY="-280" endX="-100" endY="320" stroke="#58a6ff" strokeWidth="1.3" opacity="0.20" strokeDashArray="10, 16" strokeLineCap="ROUND"/>
+            <Line fx:id="dataLine6" startX="-40" startY="-240" endX="-40" endY="290" stroke="#1f6feb" strokeWidth="1.2" opacity="0.19" strokeDashArray="9, 17" strokeLineCap="ROUND"/>
+            
+            <!-- Bundle 3 (Close foreground - thicker, brighter) -->
+            <Line fx:id="dataLine7" startX="80" startY="-300" endX="80" endY="350" stroke="#58a6ff" strokeWidth="1.8" opacity="0.28" strokeDashArray="12, 18" strokeLineCap="ROUND"/>
+            <Line fx:id="dataLine8" startX="150" startY="-280" endX="150" endY="330" stroke="#1f6feb" strokeWidth="1.9" opacity="0.30" strokeDashArray="14, 16" strokeLineCap="ROUND"/>
+            <Line fx:id="dataLine9" startX="220" startY="-290" endX="220" endY="340" stroke="#58a6ff" strokeWidth="1.8" opacity="0.27" strokeDashArray="12, 18" strokeLineCap="ROUND"/>
+            
+            <!-- Bundle 4 (Far right background) -->
+            <Line fx:id="dataLine10" startX="320" startY="-190" endX="320" endY="240" stroke="#1f6feb" strokeWidth="0.9" opacity="0.14" strokeDashArray="7, 19" strokeLineCap="ROUND"/>
+            <Line fx:id="dataLine11" startX="370" startY="-210" endX="370" endY="260" stroke="#58a6ff" strokeWidth="0.8" opacity="0.12" strokeDashArray="6, 20" strokeLineCap="ROUND"/>
+            
+            <!-- Bundle 5 (Far left edge background) -->
+            <Line fx:id="dataLine12" startX="-420" startY="-170" endX="-420" endY="230" stroke="#58a6ff" strokeWidth="0.7" opacity="0.10" strokeDashArray="5, 22" strokeLineCap="ROUND"/>
+            <Line fx:id="dataLine13" startX="-450" startY="-145" endX="-450" endY="210" stroke="#1f6feb" strokeWidth="0.7" opacity="0.09" strokeDashArray="5, 20" strokeLineCap="ROUND"/>
+            
+            <!-- Bundle 6 (Mid-far left) -->
+            <Line fx:id="dataLine14" startX="-230" startY="-260" endX="-230" endY="310" stroke="#58a6ff" strokeWidth="1.0" opacity="0.16" strokeDashArray="8, 18" strokeLineCap="ROUND"/>
+            <Line fx:id="dataLine15" startX="-190" startY="-235" endX="-190" endY="285" stroke="#1f6feb" strokeWidth="1.1" opacity="0.17" strokeDashArray="9, 17" strokeLineCap="ROUND"/>
+            
+            <!-- Bundle 7 (Near center - prominent) -->
+            <Line fx:id="dataLine16" startX="-10" startY="-290" endX="-10" endY="340" stroke="#58a6ff" strokeWidth="1.6" opacity="0.25" strokeDashArray="11, 17" strokeLineCap="ROUND"/>
+            <Line fx:id="dataLine17" startX="30" startY="-270" endX="30" endY="320" stroke="#1f6feb" strokeWidth="1.7" opacity="0.26" strokeDashArray="12, 16" strokeLineCap="ROUND"/>
+            
+            <!-- Bundle 8 (Far right edge) -->
+            <Line fx:id="dataLine18" startX="410" startY="-160" endX="410" endY="220" stroke="#1f6feb" strokeWidth="0.7" opacity="0.11" strokeDashArray="6, 21" strokeLineCap="ROUND"/>
+            <Line fx:id="dataLine19" startX="440" startY="-140" endX="440" endY="200" stroke="#58a6ff" strokeWidth="0.7" opacity="0.10" strokeDashArray="5, 22" strokeLineCap="ROUND"/>
+            
+            <!-- Bundle 9 (BOLD near-left - thick lines) -->
+            <Line fx:id="dataLine20" startX="-280" startY="-310" endX="-280" endY="360" stroke="#58a6ff" strokeWidth="2.5" opacity="0.35" strokeDashArray="14, 18" strokeLineCap="ROUND"/>
+            <Line fx:id="dataLine21" startX="-260" startY="-290" endX="-260" endY="340" stroke="#1f6feb" strokeWidth="3.0" opacity="0.38" strokeDashArray="16, 16" strokeLineCap="ROUND"/>
+            
+            <!-- Bundle 10 (BOLD center - very thick) -->
+            <Line fx:id="dataLine22" startX="60" startY="-320" endX="60" endY="370" stroke="#1f6feb" strokeWidth="3.5" opacity="0.40" strokeDashArray="18, 16" strokeLineCap="ROUND"/>
+            <Line fx:id="dataLine23" startX="100" startY="-300" endX="100" endY="350" stroke="#58a6ff" strokeWidth="4.0" opacity="0.42" strokeDashArray="20, 14" strokeLineCap="ROUND"/>
+            
+            <!-- Bundle 11 (BOLD right - thick) -->
+            <Line fx:id="dataLine24" startX="260" startY="-295" endX="260" endY="345" stroke="#58a6ff" strokeWidth="2.8" opacity="0.36" strokeDashArray="15, 17" strokeLineCap="ROUND"/>
+            <Line fx:id="dataLine25" startX="290" startY="-285" endX="290" endY="335" stroke="#1f6feb" strokeWidth="3.2" opacity="0.39" strokeDashArray="17, 15" strokeLineCap="ROUND"/>
+            
+            <!-- Bundle 12 (Medium-left) -->
+            <Line fx:id="dataLine26" startX="-360" startY="-240" endX="-360" endY="300" stroke="#1f6feb" strokeWidth="1.5" opacity="0.22" strokeDashArray="10, 19" strokeLineCap="ROUND"/>
+            <Line fx:id="dataLine27" startX="-320" startY="-255" endX="-320" endY="315" stroke="#58a6ff" strokeWidth="1.8" opacity="0.24" strokeDashArray="11, 18" strokeLineCap="ROUND"/>
+            
+            <!-- Bundle 13 (Medium-right) -->
+            <Line fx:id="dataLine28" startX="340" startY="-245" endX="340" endY="305" stroke="#58a6ff" strokeWidth="1.6" opacity="0.23" strokeDashArray="10, 18" strokeLineCap="ROUND"/>
+            <Line fx:id="dataLine29" startX="380" startY="-230" endX="380" endY="290" stroke="#1f6feb" strokeWidth="1.9" opacity="0.25" strokeDashArray="12, 17" strokeLineCap="ROUND"/>
+            
+            <!-- Flowing particle waves - Group container -->
+            <Group fx:id="waveGroup1" translateY="-150">
+               <Circle radius="2" opacity="0.6" fill="#58a6ff" translateX="-300" translateY="0"/>
+               <Circle radius="2" opacity="0.6" fill="#58a6ff" translateX="-250" translateY="-15"/>
+               <Circle radius="2" opacity="0.6" fill="#58a6ff" translateX="-200" translateY="-25"/>
+               <Circle radius="2" opacity="0.6" fill="#58a6ff" translateX="-150" translateY="-30"/>
+               <Circle radius="2" opacity="0.6" fill="#58a6ff" translateX="-100" translateY="-25"/>
+               <Circle radius="2" opacity="0.6" fill="#58a6ff" translateX="-50" translateY="-15"/>
+               <Circle radius="2" opacity="0.6" fill="#58a6ff" translateX="0" translateY="0"/>
+               <Circle radius="2" opacity="0.6" fill="#58a6ff" translateX="50" translateY="15"/>
+               <Circle radius="2" opacity="0.6" fill="#58a6ff" translateX="100" translateY="25"/>
+               <Circle radius="2" opacity="0.6" fill="#58a6ff" translateX="150" translateY="30"/>
+               <Circle radius="2" opacity="0.6" fill="#58a6ff" translateX="200" translateY="25"/>
+               <Circle radius="2" opacity="0.6" fill="#58a6ff" translateX="250" translateY="15"/>
+               <Circle radius="2" opacity="0.6" fill="#58a6ff" translateX="300" translateY="0"/>
+            </Group>
+            
+            <Group fx:id="waveGroup2" translateY="-50">
+               <Circle radius="1.5" opacity="0.4" fill="#1f6feb" translateX="-280" translateY="0"/>
+               <Circle radius="1.5" opacity="0.4" fill="#1f6feb" translateX="-230" translateY="12"/>
+               <Circle radius="1.5" opacity="0.4" fill="#1f6feb" translateX="-180" translateY="20"/>
+               <Circle radius="1.5" opacity="0.4" fill="#1f6feb" translateX="-130" translateY="24"/>
+               <Circle radius="1.5" opacity="0.4" fill="#1f6feb" translateX="-80" translateY="20"/>
+               <Circle radius="1.5" opacity="0.4" fill="#1f6feb" translateX="-30" translateY="12"/>
+               <Circle radius="1.5" opacity="0.4" fill="#1f6feb" translateX="20" translateY="0"/>
+               <Circle radius="1.5" opacity="0.4" fill="#1f6feb" translateX="70" translateY="-12"/>
+               <Circle radius="1.5" opacity="0.4" fill="#1f6feb" translateX="120" translateY="-20"/>
+               <Circle radius="1.5" opacity="0.4" fill="#1f6feb" translateX="170" translateY="-24"/>
+               <Circle radius="1.5" opacity="0.4" fill="#1f6feb" translateX="220" translateY="-20"/>
+               <Circle radius="1.5" opacity="0.4" fill="#1f6feb" translateX="270" translateY="-12"/>
+            </Group>
+            
+            <Group fx:id="waveGroup3" translateY="100">
+               <Circle radius="2.5" opacity="0.5" fill="#58a6ff" translateX="-320" translateY="0"/>
+               <Circle radius="2.5" opacity="0.5" fill="#58a6ff" translateX="-270" translateY="-18"/>
+               <Circle radius="2.5" opacity="0.5" fill="#58a6ff" translateX="-220" translateY="-30"/>
+               <Circle radius="2.5" opacity="0.5" fill="#58a6ff" translateX="-170" translateY="-35"/>
+               <Circle radius="2.5" opacity="0.5" fill="#58a6ff" translateX="-120" translateY="-30"/>
+               <Circle radius="2.5" opacity="0.5" fill="#58a6ff" translateX="-70" translateY="-18"/>
+               <Circle radius="2.5" opacity="0.5" fill="#58a6ff" translateX="-20" translateY="0"/>
+               <Circle radius="2.5" opacity="0.5" fill="#58a6ff" translateX="30" translateY="18"/>
+               <Circle radius="2.5" opacity="0.5" fill="#58a6ff" translateX="80" translateY="30"/>
+               <Circle radius="2.5" opacity="0.5" fill="#58a6ff" translateX="130" translateY="35"/>
+               <Circle radius="2.5" opacity="0.5" fill="#58a6ff" translateX="180" translateY="30"/>
+               <Circle radius="2.5" opacity="0.5" fill="#58a6ff" translateX="230" translateY="18"/>
+               <Circle radius="2.5" opacity="0.5" fill="#58a6ff" translateX="280" translateY="0"/>
+            </Group>
+            
+            <!-- INTERMEDIATE CONNECTING DOTS - Fill gaps between wave groups for smooth flow -->
+            <Group fx:id="intermediateWaveGroup1" translateY="-100">
+               <!-- Intermediate dots between wave 1 and 2 (smaller dots for connection) -->
+               <Circle radius="1.2" opacity="0.5" fill="#4a9bd8" translateX="-290" translateY="5"/>
+               <Circle radius="1.2" opacity="0.5" fill="#4a9bd8" translateX="-240" translateY="-2"/>
+               <Circle radius="1.2" opacity="0.5" fill="#4a9bd8" translateX="-190" translateY="-8"/>
+               <Circle radius="1.2" opacity="0.5" fill="#4a9bd8" translateX="-140" translateY="-10"/>
+               <Circle radius="1.2" opacity="0.5" fill="#4a9bd8" translateX="-90" translateY="-8"/>
+               <Circle radius="1.2" opacity="0.5" fill="#4a9bd8" translateX="-40" translateY="-2"/>
+               <Circle radius="1.2" opacity="0.5" fill="#4a9bd8" translateX="10" translateY="5"/>
+               <Circle radius="1.2" opacity="0.5" fill="#4a9bd8" translateX="60" translateY="8"/>
+               <Circle radius="1.2" opacity="0.5" fill="#4a9bd8" translateX="110" translateY="10"/>
+               <Circle radius="1.2" opacity="0.5" fill="#4a9bd8" translateX="160" translateY="8"/>
+               <Circle radius="1.2" opacity="0.5" fill="#4a9bd8" translateX="210" translateY="5"/>
+               <Circle radius="1.2" opacity="0.5" fill="#4a9bd8" translateX="260" translateY="0"/>
+            </Group>
+            
+            <Group fx:id="intermediateWaveGroup2" translateY="25">
+               <!-- Intermediate dots between wave 2 and 3 (smaller dots) -->
+               <Circle radius="1.5" opacity="0.45" fill="#3d8fc7" translateX="-270" translateY="8"/>
+               <Circle radius="1.5" opacity="0.45" fill="#3d8fc7" translateX="-220" translateY="15"/>
+               <Circle radius="1.5" opacity="0.45" fill="#3d8fc7" translateX="-170" translateY="18"/>
+               <Circle radius="1.5" opacity="0.45" fill="#3d8fc7" translateX="-120" translateY="15"/>
+               <Circle radius="1.5" opacity="0.45" fill="#3d8fc7" translateX="-70" translateY="8"/>
+               <Circle radius="1.5" opacity="0.45" fill="#3d8fc7" translateX="-20" translateY="0"/>
+               <Circle radius="1.5" opacity="0.45" fill="#3d8fc7" translateX="30" translateY="-8"/>
+               <Circle radius="1.5" opacity="0.45" fill="#3d8fc7" translateX="80" translateY="-15"/>
+              <Circle radius="1.5" opacity="0.45" fill="#3d8fc7" translateX="130" translateY="-18"/>
+               <Circle radius="1.5" opacity="0.45" fill="#3d8fc7" translateX="180" translateY="-15"/>
+               <Circle radius="1.5" opacity="0.45" fill="#3d8fc7" translateX="230" translateY="-8"/>
+            </Group>
+            
+            <Group fx:id="intermediateWaveGroup3" translateY="-25">
+               <!-- Extra intermediate dots for ultimate smoothness (tiny dots) -->
+               <Circle radius="1.0" opacity="0.4" fill="#5099d5" translateX="-305" translateY="-8"/>
+               <Circle radius="1.0" opacity="0.4" fill="#5099d5" translateX="-255" translateY="-12"/>
+               <Circle radius="1.0" opacity="0.4" fill="#5099d5" translateX="-205" translateY="-14"/>
+               <Circle radius="1.0" opacity="0.4" fill="#5099d5" translateX="-155" translateY="-12"/>
+               <Circle radius="1.0" opacity="0.4" fill="#5099d5" translateX="-105" translateY="-8"/>
+               <Circle radius="1.0" opacity="0.4" fill="#5099d5" translateX="-55" translateY="0"/>
+               <Circle radius="1.0" opacity="0.4" fill="#5099d5" translateX="-5" translateY="8"/>
+               <Circle radius="1.0" opacity="0.4" fill="#5099d5" translateX="45" translateY="12"/>
+               <Circle radius="1.0" opacity="0.4" fill="#5099d5" translateX="95" translateY="14"/>
+               <Circle radius="1.0" opacity="0.4" fill="#5099d5" translateX="145" translateY="12"/>
+               <Circle radius="1.0" opacity="0.4" fill="#5099d5" translateX="195" translateY="8"/>
+               <Circle radius="1.0" opacity="0.4" fill="#5099d5" translateX="245" translateY="0"/>
+            </Group>
+         </children>
+      </StackPane>
+      
+      <!-- Main registration card with blue glow -->
+      <VBox alignment="CENTER" spacing="12.0" maxWidth="380.0" maxHeight="550.0" 
+            style="-fx-background-color: #1c2128 !important; -fx-background-radius: 20; -fx-effect: dropshadow(gaussian, rgba(88, 166, 255, 0.25), 30, 0.6, 0, 0); -fx-padding: 35; -fx-border-color: rgba(88, 166, 255, 0.4); -fx-border-width: 1px; -fx-border-radius: 20;">
+         <children>
+            <!-- Logo/Title Section -->
+            <VBox alignment="CENTER" spacing="6.0" style="-fx-background-color: transparent;">
+               <children>
+
+                  <Label text="TechAssist" 
+                         style="-fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: #e6edf3; -fx-background-color: transparent;">
+                     <VBox.margin>
+                        <Insets bottom="3.0" />
+                     </VBox.margin>
+                  </Label>
+                  
+                  <Label text="Create New Account" 
+                         style="-fx-font-size: 14px; -fx-text-fill: #7d8590; -fx-background-color: transparent;">
+                     <VBox.margin>
+                        <Insets bottom="12.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            
+            <!-- Input Fields -->
+            <VBox spacing="10.0" alignment="CENTER" style="-fx-background-color: transparent;">
+               <children>
+                  <VBox spacing="5.0" style="-fx-background-color: transparent;">
+                     <children>
+                        <Label text="Username" style="-fx-font-size: 12px; -fx-font-weight: bold; -fx-text-fill: #e6edf3; -fx-background-color: transparent;" />
+                        <TextField fx:id="usernameField" promptText="Choose a username (min 3 characters)"
+                                   style="-fx-background-color: #0d1117; -fx-text-fill: #e6edf3; -fx-prompt-text-fill: #7d8590; -fx-background-radius: 10; -fx-border-color: #30363d; -fx-border-width: 1px; -fx-border-radius: 10; -fx-padding: 10; -fx-font-size: 13px; -fx-pref-width: 280;"/>
+                     </children>
+                  </VBox>
+                  
+                  <VBox spacing="5.0" style="-fx-background-color: transparent;">
+                     <children>
+                        <Label text="Password" style="-fx-font-size: 12px; -fx-font-weight: bold; -fx-text-fill: #e6edf3; -fx-background-color: transparent;" />
+                        <PasswordField fx:id="passwordField" promptText="Enter password (min 6 characters)"
+                                       style="-fx-background-color: #0d1117; -fx-text-fill: #e6edf3; -fx-prompt-text-fill: #7d8590; -fx-background-radius: 10; -fx-border-color: #30363d; -fx-border-width: 1px; -fx-border-radius: 10; -fx-padding: 10; -fx-font-size: 13px; -fx-pref-width: 280;"/>
+                     </children>
+                  </VBox>
+                  
+                  <VBox spacing="5.0" style="-fx-background-color: transparent;">
+                     <children>
+                        <Label text="Confirm Password" style="-fx-font-size: 12px; -fx-font-weight: bold; -fx-text-fill: #e6edf3; -fx-background-color: transparent;" />
+                        <PasswordField fx:id="confirmPasswordField" promptText="Re-enter password"
+                                       style="-fx-background-color: #0d1117; -fx-text-fill: #e6edf3; -fx-prompt-text-fill: #7d8590; -fx-background-radius: 10; -fx-border-color: #30363d; -fx-border-width: 1px; -fx-border-radius: 10; -fx-padding: 10; -fx-font-size: 13px; -fx-pref-width: 280;"/>
+                     </children>
+                  </VBox>
+                  
+                  <Label fx:id="errorLabel" text="" style="-fx-text-fill: #e74c3c; -fx-font-size: 11px; -fx-font-weight: bold; -fx-background-color: transparent;">
+                     <VBox.margin>
+                        <Insets top="3.0" />
+                     </VBox.margin>
+                  </Label>
+                  
+                  <Label fx:id="successLabel" text="" style="-fx-text-fill: #27ae60; -fx-font-size: 11px; -fx-font-weight: bold; -fx-background-color: transparent;">
+                     <VBox.margin>
+                        <Insets top="3.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            
+            <!-- Buttons -->
+            <VBox spacing="8.0" alignment="CENTER" style="-fx-background-color: transparent;">
+               <children>
+                  <Button text="Register" onAction="#handleRegister" prefWidth="280.0" prefHeight="40.0"
+                          style="-fx-background-color: #238636; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10; -fx-cursor: hand; -fx-border-color: rgba(240, 246, 252, 0.1); -fx-border-width: 1px;">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  
+                  <Button text="← Back to Login" onAction="#handleBackToLogin" prefWidth="280.0" prefHeight="40.0"
+                          style="-fx-background-color: #161b22; -fx-text-fill: #e6edf3; -fx-border-color: #30363d; -fx-border-width: 1px; -fx-border-radius: 10; -fx-background-radius: 10; -fx-font-size: 13px; -fx-font-weight: bold; -fx-cursor: hand;"/>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

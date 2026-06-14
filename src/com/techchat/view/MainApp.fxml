@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.techchat.controller.MainAppController">
+   <left>
+      <VBox prefWidth="200.0" spacing="5.0" styleClass="sidebar" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="TechAssist Knowledge Base" style="-fx-font-size: 14px; -fx-font-weight: bold;" wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            
+            <Button fx:id="homeButton" maxWidth="Infinity" mnemonicParsing="false" onAction="#showHome" text="🏠 Home">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </Button>
+            
+            <Button fx:id="chatButton" maxWidth="Infinity" mnemonicParsing="false" onAction="#showChat" text="💬 Chat Assistant">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </Button>
+            
+            <Button fx:id="searchButton" maxWidth="Infinity" mnemonicParsing="false" onAction="#showSearch" text="🔍 Search">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </Button>
+            
+            <Button fx:id="historyButton" maxWidth="Infinity" mnemonicParsing="false" onAction="#showHistory" text="🕒 Chat History">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </Button>
+            
+            <Button fx:id="libraryButton" maxWidth="Infinity" mnemonicParsing="false" onAction="#showLibrary" text="📚 Document Library">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </Button>
+            
+            <Button fx:id="adminButton" maxWidth="Infinity" mnemonicParsing="false" onAction="#showAdmin" text="⚙️ Admin">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </Button>
+            
+            <Button fx:id="settingsButton" maxWidth="Infinity" mnemonicParsing="false" onAction="#showSettings" text="🔧 Settings">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </Button>
+            
+            <Button fx:id="logoutButton" maxWidth="Infinity" mnemonicParsing="false" onAction="#handleLogout" text="🚪 Logout" style="-fx-background-color: #c0392b; -fx-text-fill: white;">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <StackPane fx:id="contentArea" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Select a page from the menu" />
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>
